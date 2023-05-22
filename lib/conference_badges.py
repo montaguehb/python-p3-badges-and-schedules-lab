@@ -13,7 +13,5 @@ def assign_rooms(names):
     return newList
 
 def printer(names):
-    for n in batch_badge_creator(names):
-        print(n)
-    for n in assign_rooms(names):
+    for n in batch_badge_creator(names) + assign_rooms(names):
         print(n)
